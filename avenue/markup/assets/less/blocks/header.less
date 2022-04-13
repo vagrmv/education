@@ -1,0 +1,39 @@
+// main: ../style.less
+
+.header{
+  background-color: @clr_light_black;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__currency{
+  span{
+    cursor: default;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: @clr_grey;
+    margin-right: 5px;
+  }
+}
+.header__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__auth_links{
+  margin-right: 80px;
+}
+.header__link{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: @clr_grey;
+  transition: color .2s linear;
+  &:first-child{
+    margin-right: 10px;
+  }
+  &:hover{
+    color: @clr_cyan;
+  }
+}
