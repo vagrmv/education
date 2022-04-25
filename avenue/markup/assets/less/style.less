@@ -1,5 +1,7 @@
 // out: ../css/style.css, compress: true
 
+// The psd template is measured for high res displays so the prototype version of markup is also calculated for high res values. Many things might be overlapped or shifted at this moment. This will be fixed in future.
+
 *,
 *::before,
 *::after{
@@ -7,7 +9,7 @@
 }
 html{
   font-size: 62.5%;
-  font-family: @fnt_montserrat;
+  font-family: @fnt_main;
 }
 body{
   margin: 0;
@@ -24,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a, span{
   padding: 0 15px;
 
   &--wide{
-    max-width: 1800
+    max-width: 1800px;
   }
 }
 .display_none{
@@ -34,6 +36,7 @@ h1, h2, h3, h4, h5, h6, p, a, span{
 @import "mixins";
 @import "fonts";
 @import "vars";
-@import "blocks/header";
-@import "blocks/dropdown";
+@import "blocks/top-bar";
 @import "blocks/intro";
+@import "blocks/nav";
+@import "blocks/btn";

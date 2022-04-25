@@ -1,5 +1,60 @@
 // main: ../style.less
+
 .intro{
-  height: 920px;
+  // background-color: @clr_dark_white;
   background-color: @clr_dark_white;
+}
+.intro__background-layer{
+  width: 100%;
+  max-width: 2050px;
+  margin: 0 auto;
+  background: url(../images/intro/slide_1.jpg) @clr_dark_white center no-repeat;
+  background-size: cover;
+}
+.intro__inner{
+  position: relative;
+  height: ~"calc(100vh - 45px)";
+  max-height: 920px;
+}
+
+.intro__header{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  padding:35px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.intro__logo{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: @clr_light_black;
+}
+
+.intro__slider{
+  position: relative;
+  height: 100%;
+}
+// .intro__image{
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+.intro__btn{
+  position: absolute;
+  bottom: 13%;
+  right: 10.2%;
 }
